@@ -1,0 +1,21 @@
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+header {
+    margin-top: 75px;
+}
+
+
+#testimonial {
+    background: #bdcddf;
+    padding:  50px 0 30px 0;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Amatic SC', cursive;
+}
+
+footer {
+    background: url(../img/image4.png) no-repeat;
+}
+
