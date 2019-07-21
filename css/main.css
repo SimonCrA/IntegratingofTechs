@@ -1,21 +1,72 @@
-body {
+
+
+header {
+    margin-top: 55px;
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+  }
+
+
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+  body {
     font-family: 'Comfortaa', cursive;
 }
 
-header {
-    margin-top: 75px;
-}
 
+#projects {
+    padding: 50px 0 30px 0;
+}
 
 #testimonial {
     background: #bdcddf;
-    padding:  50px 0 30px 0;
+    padding:  10px 0 10px 0;
     text-align: center;
     margin-top: 40px;
     font-family: 'Amatic SC', cursive;
 }
 
+#first-info {
+  text-align: justify;
+  background: url(../img/image5.jpg) no-repeat;
+}
+
+
+
+
 footer {
-    background: url(../img/image4.png) no-repeat;
+    background: url(../img/image4.jpg) no-repeat;
 }
 
