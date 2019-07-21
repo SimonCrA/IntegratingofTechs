@@ -17,19 +17,20 @@
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+
+<body id="topPage">
     <!--Navigation-->
     
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top auto-hide">
     <div class="container">
-        <a class="navbar-brand" href="#">Soluciones Tecnológicas</a>
+        <a class="navbar-brand" href="#topPage">BlueSkyCode</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#header">Inicio <span class="sr-only">(current)</span></a>
+            <li class="nav-item active ">
+              <a class="nav-link" href="#projects">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#first-info">Sobre mi</a>
@@ -45,34 +46,57 @@
     <!--Header-->
 
   <header id="header">
-    <div class="container mt-5">
-      <div class="row">
-          <div class="col-md-6">
-              <div class="header-content-left">
-                  <img src="img/image5.jpg" style="width: 100%">
-              </div>
+
+      <div class="overlay"></div>
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-black">
+            <h1 class="display-4">Simon Clemente</h1>
+            <p class="lead mb-0">Soluciónes Tecnológicas a tu disposición</p>
           </div>
-          <div class="col-md-6">
-             <div class="header-content-right">
-               <h1 class="display-4">Lorem ipsum</h1>
-               <p class="mt-5">Lor em ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquid amet possimus odit dolores deleniti iure quod laborum ipsum? Accusantium velit vitae delectus odio quas eaque omnis perspiciatis possimus voluptatibus.</p>
-               <a href="#" class="btn btn-outline-secondary btn-lg mt-5 header-btn">Leer mas</a>
-             </div> 
-          </div>
+        </div>
       </div>
-    </div>
   </header>
 
-  <section id="testimonial">
+  <!--Projects-->
 
-    <div class="container">
-      <p class="h2 mb-2">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium dicta accusamus autem unde corrupti obcaecati at, perspiciatis odit magni molestiae aliquam alias recusandae dolores laborum soluta distinctio ullam a. Delectus!
-      </p>
-      <p class="h4">-Keanu Reeves</p>
-    </div>
+  <section id="projects">
+      <div class="container mt-5">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="header-content-left">
+                      <img src="img/image3.jpg" style="width: 100%">
+                  </div>
+              </div>
+              <div class="col-md-6">
+                 <div class="header-content-right">
+                   <h1 class="display-4">Lorem ipsum</h1>
+                   <p class="mt-5">Lor em ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquid amet possimus odit dolores deleniti iure quod laborum ipsum? Accusantium velit vitae delectus odio quas eaque omnis perspiciatis possimus voluptatibus.</p>
+                   <a href="#" class="btn btn-outline-secondary btn-lg mt-5 header-btn">Leer mas</a>
+                 </div> 
+             </div> 
+                 </div> 
+              </div>
+          </div>
+        </div>
+
+        
+    <section id="testimonial">
+
+      <div class="container">
+        <p class="h2 mb-2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium dicta accusamus autem unde corrupti obcaecati at, perspiciatis odit magni molestiae aliquam alias recusandae dolores laborum soluta distinctio ullam a. Delectus!
+        </p>
+        <p class="h4">-Keanu Reeves</p>
+      </div>
+  
+    </section>
 
   </section>
+
 
 <!--Primera Informacion-->
   
@@ -81,14 +105,14 @@
       <div class="row mt-5">
         <div class="col-md-6">
           <div class="info-left">
-            <img src="img/image2.png" alt="Code" style=" width: 100%">
+            <img src="img/image2.png" alt="avatar" style=" max-width:100%;width:auto;height:auto;" >
           </div>
         </div>
         <div class="col-md-6 my-auto">
-          <div class="info-right">
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur, distinctio est fugiat commodi ipsam ut dolor enim quibusdam voluptatibus eum corrupti facere rem. Deserunt adipisci eos illo consequuntur illum!</p>
-            <a href="#" class="btn btn-outline-secondary btn-lg mt-5">ingresar</a>
+          <div class="info-right  text-white">
+            <h2>Hola, soy Simon.</h2>
+            <p>Un gusto que estes aqui para conocerme. Soy Ingeniero electrónico de profesión, interesado en la tecnología casi cómo un geek, me gusta aprender, me gusta la música casi tanto como para entenderla. Tengo cómo objetivo aprender a distinguir (Leí que la inteligencia es la capacidad que tienes para distinguir los detalles de algo) tantas cosas que me permita ofrecer una solución para mejorar en algo la vida diaria de las personas sin afectar el bienestar del planeta. Si quieres conocerme más a fondo, ¡Adelante! ve mi perfil.</p>
+            <a href="/cv.html " class="btn btn-outline-secondary text-white btn-lg mt-5">ingresar</a>
           </div>
         </div>
       </div>
@@ -96,7 +120,7 @@
   </section>
 
   <!--Segunda Informacion-->
-  <section id="second-info" style="background: #f1f1f1;">
+  <section class="border" id="second-info" style="background: #f1f1f1;">
     <div class="container">
       <div class="row my-5">
         <div class="col-md-6">
@@ -146,7 +170,7 @@
   <script>
     window.sr = ScrollReveal();
     sr.reveal('.navbar', {
-      duration: 3000,
+      duration: 2000,
       origin: 'bottom'
     });
     sr.reveal('.header-content-left', {
@@ -161,8 +185,8 @@
     });
     sr.reveal('.header-btn', {
       duration: 2000,
-      origin: 'left',
-      delay: 1000
+      origin: 'bottom',
+      delay: 2000
     });
     sr.reveal('#testimonial', {
       duration: 2000,
