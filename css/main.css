@@ -1,5 +1,4 @@
 
-
 header {
     margin-top: 55px;
     position: relative;
@@ -63,10 +62,59 @@ header video {
   background: url(../img/image5.jpg) no-repeat;
 }
 
-
-
-
-footer {
-    background: url(../img/image4.jpg) no-repeat;
+#contact {
+  background: #010b16;
 }
 
+#contact .card {
+  background: #5d82ad;
+  text-align: center;
+  letter-spacing: 0.15rem;
+  font-size: 0.8rem;
+  font-family: 'Amatic SC', cursive;
+  border-bottom: 0.25rem solid #a5eee3;
+}
+
+#contact .card hr {
+  border-color: #b6ddd9;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+#contact .card .large {
+  font-size: 190%;
+} 
+
+
+.text-primary {
+  color: #c3c2d4 !important;
+}
+
+footer {
+    background: #010b16;
+}
+
+footer hr {
+  border-color: #aee7de;
+  border-width: 0.10rem;
+  width: 9rem;
+}
+
+
+footer .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+footer .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer .social a:active {
+  color: #fff;
+}
