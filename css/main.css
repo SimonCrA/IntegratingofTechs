@@ -2,58 +2,110 @@
 header {
     margin-top: 55px;
     position: relative;
-    background-color: black;
-    height: 75vh;
+    background-color: rgb(255, 255, 255);
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
+    
 }
 
-header .container {
-    position: relative;
-    z-index: 2;
-  }
+header .carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
+.carousel-item .h3 {
+color:  #ebe8ff;
+}
 
+header .background1 {
+  background: url(../img/image5.jpg) no-repeat;
+}
 
-header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-
-  @media (pointer: coarse) and (hover: none) {
-    header {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-    }
-    header video {
-      display: none;
-    }
-  }
+header .background2 {
+  background: url(../img/image4.jpg) no-repeat;
+}
+header .background3 {
+  background: url(../img/image8.jpg) no-repeat;
+}
 
   body {
     font-family: 'Comfortaa', cursive;
 }
 
+background-color-primary {
+  color: #1a237e;
+}
+
+background-color-primary-light {
+  color: #534bae;
+}
+background-color-primary-dark {
+  color: #000051;
+}
+background-color-secondary {
+  color: #e1f5fe;
+}
+background-color-secondary-light {
+  color:#ffffff;
+}
+background-color-secondary-dark {
+  color: #1a237e;
+}
 
 #projects {
-    padding: 50px 0 30px 0;
+  background: -webkit-linear-gradient(rgb(238, 238, 229), rgb(21, 0, 58));
+  background: -o-linear-gradient(rgb(238, 238, 229), rgb(21, 0, 58));
+  background: -moz-linear-gradient(rgb(238, 238, 229), rgb(21, 0, 58));
+  background: linear-gradient(rgb(238, 238, 229), rgb(21, 0, 58)); 
+  background-color: #1a237e;
+}
+
+.projects-section {
+  padding: 10rem 0;
+  background: #dde5ee;
+}
+
+.projects-section .colorB {
+  background: #010b16;
+}
+
+.projects-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+  }
 }
 
 #testimonial {
-    background: #bdcddf;
+    background:rgb(21, 0, 58);
     padding:  10px 0 10px 0;
     text-align: center;
-    margin-top: 40px;
     font-family: 'Amatic SC', cursive;
 }
 
@@ -62,27 +114,41 @@ header video {
   background: url(../img/image5.jpg) no-repeat;
 }
 
+#info-left {
+  align-self: auto;
+  -webkit-box-align: center;
+}
+
+#second-info {
+  background:rgb(21, 0, 58);
+}
+
 #contact {
   background: #010b16;
 }
 
 #contact .card {
-  background: #5d82ad;
+  background: -webkit-linear-gradient(rgb(238, 238, 229), rgb(21, 0, 58));
+  background: -o-linear-gradient(rgb(238, 238, 229), rgb(21, 0, 58));
+  background: -moz-linear-gradient(rgb(238, 238, 229), rgb(21, 0, 58));
+  background: linear-gradient(to top,rgb(173, 173, 156), rgb(21, 0, 58)); 
+  background-color: #1a237e;
+
   text-align: center;
   letter-spacing: 0.15rem;
   font-size: 0.8rem;
-  font-family: 'Amatic SC', cursive;
-  border-bottom: 0.25rem solid #a5eee3;
+  font-family: 'Quicksand', sans-serif;
+  border-bottom: 0.15rem solid #534bae
 }
 
 #contact .card hr {
-  border-color: #b6ddd9;
+  border-color: #010b16;
   border-width: 0.25rem;
   width: 3rem;
 }
 
 #contact .card .large {
-  font-size: 190%;
+  font-size: 120%;
 } 
 
 
@@ -92,12 +158,14 @@ header video {
 
 footer {
     background: #010b16;
+    padding: 3rem 0;
 }
 
 footer hr {
   border-color: #aee7de;
-  border-width: 0.10rem;
+  border-width: 0.05rem;
   width: 9rem;
+  padding: 4rem 0;
 }
 
 
