@@ -6,8 +6,10 @@ header {
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
-    -ms-flex-align: start !important;
-    align-items: flex-start !important;
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
 
 }
 
@@ -38,8 +40,10 @@ header .background3 {
 
   body {
     font-family: 'Comfortaa', cursive;
-    -ms-flex-align: start !important;
-    align-items: flex-start !important;
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
     
 }
 
