@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Integrating of Techs</title>
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
@@ -20,12 +20,13 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cards.css">
 </head>
 
 <body id="topPage">
     <!--Navigation-->
     
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top auto-hide">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top auto-hide">
     <div class="container">
         <a class="navbar-brand" href="#topPage">BlueSkyCode</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,66 +51,129 @@
     <!--Header-->
 
   <header id="header">
-
-      <div class="overlay"></div>
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-      </video>
-      <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100 text-black">
-            <h1 class="display-4">Simon Clemente</h1>
-            <p class="lead mb-0">Soluciónes Tecnológicas a tu disposición</p>
+    <div id="carousel" class="carousel slide" data-ride="corousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active background1">
+              <div class="carousel-caption h-50">
+                <h3 class="h3 display-4">IoT</h3>
+                <p class="h3 lead mb-0">Soluciones orientadas al internet de las cosas.</p>
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item background2">
+              <div class="carousel-caption h-50">
+                <h3 class="h3 display-4">Páginas Web</h3>
+                <p class="h3 lead mb-0">Elabporación de tu página web a medida.</p>
+              </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item background3">
+              <div class="carousel-caption h-50">
+                <h3 class="h3 display-4">Sistemas embebidos.</h3>
+                <p class="h3 lead mb-0">Programación y puesta a punto de sistemas embebidos.</p>
+              </div>
+            </div>
           </div>
-        </div>
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class=" carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
       </div>
   </header>
 
-  <!--Projects-->
-
-  <section id="projects">
-      <div class="container mt-5">
-          <div class="row">
-              <div class="col-md-6">
-                  <div class="header-content-left">
-                      <img src="img/image3.jpg" style="width: 100%">
-                  </div>
-              </div>
-              <div class="col-md-6">
-                 <div class="header-content-right">
-                   <h1 class="display-4">Lorem ipsum</h1>
-                   <p class="mt-5">Lor em ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquid amet possimus odit dolores deleniti iure quod laborum ipsum? Accusantium velit vitae delectus odio quas eaque omnis perspiciatis possimus voluptatibus.</p>
-                   <a href="#" class="btn btn-outline-secondary btn-lg mt-5 header-btn">Leer mas</a>
-                 </div> 
-             </div> 
-                 </div> 
-              </div>
+   <!-- Projects Section -->
+   <section id="projects" class="projects-section bg-light" >
+      <div class="container">
+  
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid scroll-img1 mb-3 mb-lg-0" src="img/image1.jpg" alt="">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text scroll-text text-center text-lg-left">
+              <h4>Shoreline</h4>
+              <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            </div>
           </div>
         </div>
-
-        
-    <section id="testimonial">
-
-      <div class="container">
-        <p class="h2 mb-2">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium dicta accusamus autem unde corrupti obcaecati at, perspiciatis odit magni molestiae aliquam alias recusandae dolores laborum soluta distinctio ullam a. Delectus!
-        </p>
-        <p class="h4">-Keanu Reeves</p>
-      </div>
   
+        <!-- Project One Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid scroll-img2" src="img/image4.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text scroll-text1 w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">Misty</h4>
+                  <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project Two Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid scroll-img3" src="img/image5.jpg" alt="">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text scroll-text2 w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Mountains</h4>
+                  <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
     </section>
+  
 
+    <!--Testimonials-->
+
+  <section id="testimonial">
+    <div class="container text-white">
+      <p class="h2  mb-2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium dicta accusamus autem unde corrupti obcaecati at, perspiciatis odit magni molestiae aliquam alias recusandae dolores laborum soluta distinctio ullam a. Delectus!
+      </p>
+      <p class="h4">-Keanu Reeves</p>
+    </div>
   </section>
 
-
-<!--Primera Informacion-->
+    <!--Primera Informacion-->
   
-  <section id="first-info">
+  <section id="first-info" style="padding-top: 80px; padding-bottom: 50px;">
     <div class="container">
-      <div class="row mt-5">
+      <div class="row">
         <div class="col-md-6">
-          <div class="info-left">
-            <img src="img/image2.png" alt="avatar" style=" max-width:100%;width:auto;height:auto;" >
+          <div class="info-left mt-4">
+            <div class="card" style="width: 24rem; align-content: center;">
+              <img class="card-img-top" src="./img/image10.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Simón Clemente</h5>
+                <p class="card-text">Soy simón, quieres conocerme más.</p>
+                <p class="card-text">¡ve mi perfil!</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-6 my-auto">
@@ -123,22 +187,68 @@
     </div>
   </section>
 
-  <!--Segunda Informacion-->
-  <section class="border" id="second-info" style="background: #f1f1f1;">
+    <!--Segunda Informacion-->
+  <section id="second-info">
     <div class="container">
-      <div class="row my-5">
-        <div class="col-md-6">
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur, distinctio est fugiat commodi ipsam ut dolor enim quibusdam voluptatibus eum corrupti facere rem. Deserunt adipisci eos illo consequuntur illum!</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card-container">
+            <div class="card"><a href="/cv.html">
+                <div class="card--display"><i class="fas fa-envelope text-primary mb-2"></i>
+                  <h2>Hot Tub Time Machine</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>Hot Tub Time Machine</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi nec
+                    lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur, distinctio est fugiat commodi ipsam ut dolor enim quibusdam voluptatibus eum corrupti facere rem. Deserunt adipisci eos illo consequuntur illum!</p>
+        <div class="col-md-4">
+          <div class="card-container">
+            <div class="card"><a href="hottub">
+                <div class="card--display"><i class="fas fa-envelope text-primary mb-2"></i>
+                  <h2>Hot Tub Time Machine</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>Hot Tub Time Machine</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi
+                    nec
+                    lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-container">
+            <div class="card"><a href="hottub">
+                <div class="card--display"><i class="fas fa-envelope text-primary mb-2"></i>
+                  <h2>Hot Tub Time Machine</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>Hot Tub Time Machine</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi
+                    nec
+                    lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+    <!--Contact-->
   <section id="contact">
     <div class="container">
       <div class="row">
@@ -146,9 +256,9 @@
           <div class="card py-4 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h2 class="text-uppercase text-white m-0">Dirección</h2>
+                <h4 class="text-uppercase text-black m-0">Dirección</h4>
                 <hr class="my-4">
-                <div class="large text-white">Aragua-Venezuela</div>
+                <div class="large text-black">Aragua-Venezuela</div>
               </div>
             </div>
           </div>
@@ -157,9 +267,9 @@
             <div class="card py-4 h-100">
                 <div class="card-body text-center">
                   <i class="fas fa-envelope text-primary mb-2"></i>
-                  <h2 class="text-uppercase text-white m-0">correo</h2>
+                  <h4 class="text-uppercase text-black m-0">correo</h4>
                   <hr class="my-4">
-                  <div class="large text-white">csimonr28@gmail.com</div>
+                  <div class="large text-black">csimonr28@gmail.com</div>
                 </div>
               </div>
           </div>          
@@ -168,9 +278,9 @@
             <div class="card py-4 h-100">
               <div class="card-body text-center">
                   <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h2 class="text-uppercase text-white m-0">Móvil</h2>
+                <h4 class="text-uppercase text-black m-0">Móvil</h4>
                 <hr class="my-4">
-                <div class="large text-white">+58 (424) 367-5525</div>
+                <div class="large text-black">+58 (424) 367-5525</div>
               </div>
           </div>   
       </div>
@@ -179,7 +289,7 @@
   </section>
 
 
-  <!-- Footer -->
+    <!-- Footer -->
   <footer  id="footer" class="bg-black small text-center text-white-50">
       <div class="container">
           <div class="social d-flex justify-content-center">
@@ -200,12 +310,12 @@
       </div>
     </footer>
 
-  <!-- Bootstrap 4 scripts-->
+    <!-- Bootstrap 4 scripts-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <!--Scripts-->
+    <!--Scripts-->
 
   <script>
     window.sr = ScrollReveal();
@@ -213,26 +323,41 @@
       duration: 2000,
       origin: 'bottom'
     });
-    sr.reveal('.header-content-left', {
-      duration: 2000,
-      origin: 'top',
-      distance: '300px'
-    });
-    sr.reveal('.header-content-right', {
-      duration: 2000,
-      origin: 'right',
-      distance: '300px'
-    });
-    sr.reveal('.header-btn', {
-      duration: 2000,
-      origin: 'bottom',
-      delay: 2000
-    });
     sr.reveal('#testimonial', {
       duration: 2000,
       origin: 'left',
       distance: '300px',
       viewFactor: 0.2
+    });
+    sr.reveal('.scroll-img1', {
+      duration: 2000,
+      origin: 'top',
+      distance: '400px',
+    });
+    sr.reveal('.scroll-img2', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+    });
+    sr.reveal('.scroll-img3', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px',
+    });
+    sr.reveal('.scroll-text', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '300px',
+    });
+    sr.reveal('.scroll-text1', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px',
+    });
+    sr.reveal('.scroll-text2', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
     });
 
     //smoth scrolling
