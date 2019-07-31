@@ -6,7 +6,9 @@ header {
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
-    
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+
 }
 
 header .carousel-item {
@@ -36,6 +38,9 @@ header .background3 {
 
   body {
     font-family: 'Comfortaa', cursive;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+    
 }
 
 background-color-primary {
